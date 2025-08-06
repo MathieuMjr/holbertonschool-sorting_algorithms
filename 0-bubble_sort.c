@@ -5,14 +5,16 @@
  * @array: adress of the array
  * @size: number of element
  *
- * Return: height of the tree or -1 if
- * tree is NULL
+ * Return:
  */
 void bubble_sort(int *array, size_t size)
 {
-	unsigned long int i;
-	int swap_counter = 1;
-	int temp;
+	unsigned long int i; /*loop counter*/
+	int swap_counter = 1; /*pour rentrer dans la while
+							swap_counter ne doit pas être 0
+							ensuite il incrémentera dès qu'une condition
+							de swap est rencontrée*/
+	int temp;/*stock la valeur */
 
 	while (swap_counter != 0)
 	{
